@@ -1,0 +1,158 @@
+object Form1: TForm1
+  Left = 331
+  Height = 511
+  Top = 237
+  Width = 676
+  Caption = 'Калькулятор для простых и сложных процентов'
+  ClientHeight = 511
+  ClientWidth = 676
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  object Panel1: TPanel
+    Left = 0
+    Height = 511
+    Top = 0
+    Width = 676
+    Align = alClient
+    Caption = 'Panel1'
+    ClientHeight = 511
+    ClientWidth = 676
+    TabOrder = 4
+    object Image1: TImage
+      Left = 1
+      Height = 509
+      Top = 1
+      Width = 674
+      Align = alClient
+      Anchors = [akLeft, akRight, akBottom]
+    end
+  end
+  object Edit1: TEdit
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Edit2
+    AnchorSideBottom.Control = Button1
+    Left = 45
+    Height = 63
+    Top = 104
+    Width = 144
+    Align = alCustom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.Bottom = 20
+    BorderSpacing.InnerBorder = 10
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object Edit2: TEdit
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button1
+    Left = 209
+    Height = 63
+    Top = 104
+    Width = 227
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.InnerBorder = 10
+    TabOrder = 1
+    Text = '0'
+  end
+  object Edit3: TEdit
+    AnchorSideLeft.Control = Edit2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button1
+    Left = 456
+    Height = 63
+    Top = 104
+    Width = 119
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 20
+    BorderSpacing.InnerBorder = 10
+    TabOrder = 2
+    Text = '0'
+  end
+  object Button1: TButton
+    AnchorSideTop.Side = asrBottom
+    Left = 24
+    Height = 111
+    Top = 187
+    Width = 626
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 20
+    BorderSpacing.InnerBorder = 10
+    Caption = 'Вычислить'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    Left = 64
+    Height = 15
+    Top = 318
+    Width = 36
+    Anchors = [akTop]
+    BorderSpacing.Top = 20
+    BorderSpacing.InnerBorder = 10
+    Caption = '111111'
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    Left = 312
+    Height = 15
+    Top = 318
+    Width = 30
+    Anchors = [akTop]
+    BorderSpacing.Top = 20
+    BorderSpacing.InnerBorder = 10
+    Caption = '11111'
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Edit1
+    Left = 54
+    Height = 15
+    Top = 69
+    Width = 41
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 20
+    BorderSpacing.InnerBorder = 10
+    Caption = 'Cумма:'
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Edit2
+    Left = 274
+    Height = 15
+    Top = 69
+    Width = 51
+    Anchors = [akBottom]
+    BorderSpacing.InnerBorder = 10
+    Caption = 'Процент:'
+  end
+  object Label5: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Edit3
+    Left = 469
+    Height = 15
+    Top = 69
+    Width = 22
+    Anchors = [akBottom]
+    BorderSpacing.InnerBorder = 10
+    Caption = 'Год:'
+  end
+end
